@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>setingUI</class>
+ <widget class="QWidget" name="setingUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>885</width>
+    <height>473</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel{
+font: 75 12pt &quot;微软雅黑&quot;;
+
+}
+  QRadioButton{
+	
+	font: 75 12pt &quot;微软雅黑&quot;;
+}
+  QRadioButton::indicator {
+      width: 20px;
+      height: 20px;
+  }
+
+  QRadioButton::indicator::unchecked {
+      image: url(:/images/radioButton_02.png);
+  }
+
+  QRadioButton::indicator:unchecked:hover {
+      
+  }
+
+  QRadioButton::indicator:unchecked:pressed {
+      
+  }
+
+  QRadioButton::indicator::checked {
+      image: url(:/images/radioButton_01.png);
+  }
+
+  QRadioButton::indicator:checked:hover {
+      
+  }
+
+  QRadioButton::indicator:checked:pressed {
+      
+  }</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,1,1">
+   <property name="spacing">
+    <number>9</number>
+   </property>
+   <property name="leftMargin">
+    <number>1</number>
+   </property>
+   <property name="topMargin">
+    <number>1</number>
+   </property>
+   <property name="rightMargin">
+    <number>1</number>
+   </property>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="styleSheet">
+      <string notr="true">  .QGroupBox {
+
+      border: 2px solid;
+	  border-color: rgb(85, 170, 255);
+      border-radius: 5px;
+      margin-top: 3ex; /* leave space at the top for the title */
+	  font: 75 12pt &quot;微软雅黑&quot;;
+  }
+
+  .QGroupBox::title {
+      subcontrol-origin: margin;
+      subcontrol-position: top center; /* position at the top center */
+      padding: 0 3px;
+  }
+</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1,6">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>模型类型：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>圆柱漂移管</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_2">
+          <property name="text">
+           <string>高斯单位制</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>腔体个数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_3">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>一腔</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_4">
+          <property name="text">
+           <string>两腔</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_4" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>20</number>
+         </property>
+         <item row="2" column="0">
+          <widget class="QWidget" name="widget_6" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">.QWidget{
+	border-width:2px;
+	border-style:solid;
+	border-radius:10px;
+	
+	border-color: rgb(85, 170, 255);
+}
+
+QToolButton{
+	background-color: rgba(255, 255, 255,0);
+	margin-left:2px;
+	margin-right:2px;
+	border-color: rgba(255, 255, 255,0);
+	border-width:1px;
+	border-style:solid;
+	image:url(:images/ico_03.png);
+}	
+QToolButton:hover{
+	image:url(:images/ico_04.png);
+}
+QToolButton:pressed{
+	image:url(:images/ico_03.png);
+	margin-top:-3px;
+    margin-right:-3px;
+}
+
+QLabel{
+font: 75 12pt &quot;微软雅黑&quot;;
+
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>中间腔参数</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="toolButton_7">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QWidget" name="widget_5" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">.QWidget{
+	border-width:2px;
+	border-style:solid;
+	border-radius:10px;
+	
+	border-color: rgb(85, 170, 255);
+}
+
+QToolButton{
+	background-color: rgba(255, 255, 255,0);
+	margin-left:2px;
+	margin-right:2px;
+	border-color: rgba(255, 255, 255,0);
+	border-width:1px;
+	border-style:solid;
+	image:url(:images/ico_03.png);
+}	
+QToolButton:hover{
+	image:url(:images/ico_04.png);
+}
+QToolButton:pressed{
+	image:url(:images/ico_03.png);
+	margin-top:-3px;
+    margin-right:-3px;
+}
+
+QLabel{
+font: 75 12pt &quot;微软雅黑&quot;;
+
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>输入腔参数</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="toolButton_5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QWidget" name="widget" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">.QWidget{
+	border-width:2px;
+	border-style:solid;
+	border-radius:10px;
+	
+	border-color: rgb(85, 170, 255);
+}
+
+QToolButton{
+	background-color: rgba(255, 255, 255,0);
+	margin-left:2px;
+	margin-right:2px;
+	border-color: rgba(255, 255, 255,0);
+	border-width:1px;
+	border-style:solid;
+	image:url(:images/ico_03.png);
+}	
+QToolButton:hover{
+	image:url(:images/ico_04.png);
+}
+QToolButton:pressed{
+	image:url(:images/ico_03.png);
+	margin-top:-3px;
+    margin-right:-3px;
+}
+
+QLabel{
+font: 75 12pt &quot;微软雅黑&quot;;
+
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>计算参数</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="toolButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QWidget" name="widget_2" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">.QWidget{
+	border-width:2px;
+	border-style:solid;
+	border-radius:10px;
+	
+	border-color: rgb(85, 170, 255);
+}
+
+QToolButton{
+	background-color: rgba(255, 255, 255,0);
+	margin-left:2px;
+	margin-right:2px;
+	border-color: rgba(255, 255, 255,0);
+	border-width:1px;
+	border-style:solid;
+	image:url(:images/ico_03.png);
+}	
+QToolButton:hover{
+	image:url(:images/ico_04.png);
+}
+QToolButton:pressed{
+	image:url(:images/ico_03.png);
+	margin-top:-3px;
+    margin-right:-3px;
+}
+
+QLabel{
+font: 75 12pt &quot;微软雅黑&quot;;
+
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>电子束参数</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="toolButton_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QWidget" name="widget_7" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">.QWidget{
+	border-width:2px;
+	border-style:solid;
+	border-radius:10px;
+	
+	border-color: rgb(85, 170, 255);
+}
+
+QToolButton{
+	background-color: rgba(255, 255, 255,0);
+	margin-left:2px;
+	margin-right:2px;
+	border-color: rgba(255, 255, 255,0);
+	border-width:1px;
+	border-style:solid;
+	image:url(:images/ico_03.png);
+}	
+QToolButton:hover{
+	image:url(:images/ico_04.png);
+}
+QToolButton:pressed{
+	image:url(:images/ico_03.png);
+	margin-top:-3px;
+    margin-right:-3px;
+}
+
+QLabel{
+font: 75 12pt &quot;微软雅黑&quot;;
+
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>输出腔参数</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="toolButton_8">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QWidget" name="widget_3" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">.QWidget{
+	border-width:2px;
+	border-style:solid;
+	border-radius:10px;
+	
+	border-color: rgb(85, 170, 255);
+}
+
+QToolButton{
+	background-color: rgba(255, 255, 255,0);
+	margin-left:2px;
+	margin-right:2px;
+	border-color: rgba(255, 255, 255,0);
+	border-width:1px;
+	border-style:solid;
+	image:url(:images/ico_03.png);
+}	
+QToolButton:hover{
+	image:url(:images/ico_04.png);
+}
+QToolButton:pressed{
+	image:url(:images/ico_03.png);
+	margin-top:-3px;
+    margin-right:-3px;
+}
+
+QLabel{
+font: 75 12pt &quot;微软雅黑&quot;;
+
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>漂移管参数</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="toolButton_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QWidget" name="widget_8" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">.QWidget{
+	border-width:2px;
+	border-style:solid;
+	border-radius:10px;
+	
+	border-color: rgb(85, 170, 255);
+}
+
+QToolButton{
+	background-color: rgba(255, 255, 255,0);
+	margin-left:2px;
+	margin-right:2px;
+	border-color: rgba(255, 255, 255,0);
+	border-width:1px;
+	border-style:solid;
+	image:url(:images/ico_03.png);
+}	
+QToolButton:hover{
+	image:url(:images/ico_04.png);
+}
+QToolButton:pressed{
+	image:url(:images/ico_03.png);
+	margin-top:-3px;
+    margin-right:-3px;
+}
+
+QLabel{
+font: 75 12pt &quot;微软雅黑&quot;;
+
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>间隙电压参数</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="toolButton_9">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QWidget" name="widget_9" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">.QWidget{
+	border-width:2px;
+	border-style:solid;
+	border-radius:10px;
+	
+	border-color: rgb(85, 170, 255);
+}
+
+QToolButton{
+	background-color: rgba(255, 255, 255,0);
+	margin-left:2px;
+	margin-right:2px;
+	border-color: rgba(255, 255, 255,0);
+	border-width:1px;
+	border-style:solid;
+	image:url(:images/ico_03.png);
+}	
+QToolButton:hover{
+	image:url(:images/ico_04.png);
+}
+QToolButton:pressed{
+	image:url(:images/ico_03.png);
+	margin-top:-3px;
+    margin-right:-3px;
+}
+
+QLabel{
+font: 75 12pt &quot;微软雅黑&quot;;
+
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>输出参数</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="toolButton_10">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  QGroupBox {
+
+      border: 2px solid;
+	  border-color: rgb(85, 170, 255);
+      border-radius: 5px;
+      margin-top: 3ex; /* leave space at the top for the title */
+	  font: 75 12pt &quot;微软雅黑&quot;;
+  }
+
+  QGroupBox::title {
+      subcontrol-origin: margin;
+      subcontrol-position: top center; /* position at the top center */
+      padding: 0 3px;
+  }
+</string>
+     </property>
+     <property name="title">
+      <string>参数设置</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  QGroupBox {
+
+      border: 2px solid;
+	  border-color: rgb(85, 170, 255);
+      border-radius: 5px;
+      margin-top: 3ex; /* leave space at the top for the title */
+	  font: 75 12pt &quot;微软雅黑&quot;;
+  }
+
+  QGroupBox::title {
+      subcontrol-origin: margin;
+      subcontrol-position: top center; /* position at the top center */
+      padding: 0 3px;
+  }
+</string>
+     </property>
+     <property name="title">
+      <string>结构图</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
